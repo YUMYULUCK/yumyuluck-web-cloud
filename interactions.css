@@ -1,0 +1,33 @@
+/* Gallery interactions share the existing typography and chapter colours. */
+html { scrollbar-gutter: stable; }
+.index-links { position: relative; }
+.index-links a b { transition: transform 300ms ease; }
+.index-links a:hover b, .index-links a:focus-visible b { transform: translate(3px, -3px); }
+.directory-preview {
+  position: fixed; left: 0; top: 0; width: clamp(240px, 27vw, 390px);
+  margin: 0; z-index: 50; pointer-events: none; opacity: 0;
+  transform: translate3d(var(--preview-x, 0px), var(--preview-y, 0px), 0) scale(.96);
+  transition: opacity 180ms ease, scale 350ms ease;
+  background: #191916; box-shadow: 0 18px 50px #0006;
+}
+.directory-preview.is-visible { opacity: 1; scale: 1.04; }
+.directory-preview img { display: block; width: 100%; aspect-ratio: 1672 / 941; object-fit: cover; }
+.directory-preview figcaption { padding: 12px 15px; font-size: 11px; letter-spacing: .1em; color: #eee9df; }
+.project::before { transform: translate3d(0, var(--depth-y, 0px), 0) scale(1.06); }
+.home-navigation a { transition: background 220ms ease, border-color 220ms ease, transform 220ms ease; }
+.home-navigation a:hover { transform: translateY(-2px); }
+#viewer { background: transparent; }
+#viewer::backdrop { background: rgba(8, 9, 10, .97); animation: viewer-backdrop-in 480ms ease both; }
+#viewer.is-closing::backdrop { animation: viewer-backdrop-out 440ms ease both; }
+#viewer .viewer-top, #viewer .viewer-bottom { transition: opacity 200ms ease; }
+#viewer.is-transitioning .viewer-top, #viewer.is-transitioning .viewer-bottom { opacity: 0; pointer-events: none; }
+.viewer-flight { position: fixed; z-index: 2; margin: 0; max-width: none; max-height: none; object-fit: fill; pointer-events: none; transform-origin: 0 0; }
+@keyframes viewer-backdrop-in { from { background: rgba(8, 9, 10, 0); } to { background: rgba(8, 9, 10, .97); } }
+@keyframes viewer-backdrop-out { from { background: rgba(8, 9, 10, .97); } to { background: rgba(8, 9, 10, 0); } }
+@media (hover: none), (pointer: coarse) { .directory-preview { display: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .project::before { transform: none; }
+  .directory-preview, .index-links a b, .home-navigation a { transition: none; }
+  .home-navigation a:hover { transform: none; }
+  #viewer::backdrop, #viewer.is-closing::backdrop { animation: none; }
+}

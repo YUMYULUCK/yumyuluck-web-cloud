@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10100f">
+  <meta name="description" content="AI 影像个人作品集。从历史叙事、东方美学到奇幻动画与青春动漫，探索不同的影像世界。">
+  <title>AI 影像 · 个人作品集</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2310100f'/%3E%3Cpath d='M20 16v32l28-16z' fill='%23d4b387'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preload" href="assets/fonts/manrope-title.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="home.css?v=4">
+  <link rel="stylesheet" href="home-reflow.css?v=3">
+  <link rel="stylesheet" href="project-glass.css?v=3">
+  <link rel="stylesheet" href="scroll-reveal.css?v=1">
+  <link rel="stylesheet" href="interactions.css?v=1">
+  <link rel="stylesheet" href="profile.css?v=2">
+  <link rel="stylesheet" href="film-carousel.css?v=1">
+  <script src="app.js?v=6" defer></script>
+  <script src="scroll-reveal.js?v=3" defer></script>
+  <script src="interactions.js?v=2" defer></script>
+  <script src="film-carousel.js?v=1" defer></script>
+</head>
+<body>
+<a class="skip" href="#works">跳至作品</a>
+<header class="home-header">
+  <a href="#home" class="home-brand" aria-label="返回首页">YUMYULUCK</a>
+  <nav class="home-navigation" aria-label="主导航"><a href="#home">返回首页</a><a href="#works">作品</a><a href="#about">关于</a></nav>
+</header>
+<main>
+  <section class="home" id="home" aria-label="AI 影像个人作品集首页">
+    <video class="home-film" autoplay muted loop playsinline preload="auto" poster="assets/home-poster.jpg?v=3" aria-hidden="true">
+      <source src="assets/home-loop-mobile.mp4?v=3" type="video/mp4" media="(max-width: 640px)">
+      <source src="assets/home-loop.mp4?v=3" type="video/mp4">
+    </video>
+    <div class="home-shade" aria-hidden="true"></div>
+    <div class="home-glass" aria-hidden="true"></div>
+    <div class="home-title">
+      <h1 aria-label="作品集"><span class="home-title-portfolio">作品集</span></h1>
+    </div>
+    <div class="home-bottom"><p class="home-collection">AI 影像作品集<span>AI FILM</span></p><a class="home-explore" href="#works" aria-label="向下浏览作品">向下浏览作品<span aria-hidden="true">↓</span></a><button class="home-playback" type="button" aria-label="暂停背景视频"><span class="playback-symbol" aria-hidden="true">Ⅱ</span><span class="playback-label">暂停背景</span></button></div>
+  </section>
+
+  <section class="profile" id="about" aria-labelledby="profile-name">
+    <div class="profile-inner">
+      <div class="profile-topline"><p>MEET THE CREATOR</p><p>关于我 <span>01</span></p></div>
+      <div class="profile-stage">
+        <div class="profile-greeting">
+          <p class="profile-hello" lang="en">HI<br>THERE</p>
+          <p class="profile-handnote">镜头之外的我</p>
+          <svg class="profile-arrow" viewBox="0 0 150 90" fill="none" aria-hidden="true"><path d="M9 13c1 34 43 70 84 54 18-7 17-26 2-28-14-2-18 18-1 25 13 5 30 1 44-12M117 48l23 3-7 21"/></svg>
+        </div>
+        <figure class="profile-portrait">
+          <div class="profile-photo"><img src="assets/liu-hai-portrait-v2.jpg" alt="刘海在蓝天下戴着宽檐帽的个人照片" width="1080" height="1349" loading="lazy"></div>
+          <figcaption>A LITTLE ABOUT ME</figcaption>
+        </figure>
+        <div class="profile-info">
+          <p class="profile-intro">你好 我是</p>
+          <div class="profile-name-wrap"><h2 id="profile-name">刘海</h2><svg class="profile-name-circle" viewBox="0 0 330 160" fill="none" aria-hidden="true"><path d="M290 32C236 4 76 3 29 49c-44 44 8 93 110 99 90 5 181-25 177-65-2-22-22-38-49-45M57 28C24 43 10 73 25 96"/></svg></div>
+          <p class="profile-english" lang="en">YUMYULUCK</p>
+          <p class="profile-role">AI 影像创作者</p>
+          <svg class="profile-underline" viewBox="0 0 190 18" fill="none" aria-hidden="true"><path d="M4 8c48-6 109-5 181 1M13 15c47-3 98-4 148-2"/></svg>
+        </div>
+        <svg class="profile-spark" viewBox="0 0 70 80" fill="none" aria-hidden="true"><path d="M31 4l7 24 23-10-18 21 20 13-25-3-4 27-9-25L4 61l15-22L2 26l23 4z"/></svg>
+        <svg class="profile-asterisk" viewBox="0 0 60 60" fill="none" aria-hidden="true"><path d="M29 5l3 50M6 17l47 27M7 46L51 14"/></svg>
+      </div>
+      <div class="profile-footer">
+        <div class="profile-contacts">
+          <a href="tel:18109084095" aria-label="致电刘海：18109084095"><span>电话</span><strong>18109084095</strong></a>
+          <a href="mailto:2637941098@qq.com" aria-label="发送邮件至 2637941098@qq.com"><span>邮箱</span><strong>2637941098@qq.com</strong></a>
+        </div>
+        <a class="profile-next" href="#works">来看看我的作品 <span aria-hidden="true">↓</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="film-room" id="works" aria-labelledby="works-title">
+    <div class="film-room-heading"><div><p class="film-eyebrow">THE FILM ROOM</p><h2 id="works-title">作品放映室</h2></div><p class="film-room-intro">选一卷胶片，打开一个影像世界</p></div>
+    <div class="film-stage" aria-label="左右拖动选择胶片"><div class="reel-projector"><span class="projector-halo" aria-hidden="true"></span><img src="assets/film-carousel/projector-front.png" alt="正面朝向观众的奶油白放映机，搭配珊瑚橙胶片盘" width="1440" height="1080" draggable="false"></div><div class="reel-plinth" aria-hidden="true"></div><div class="reel-categories" role="group" aria-label="作品分类胶片"><button class="reel-category" type="button" data-film-category="real" data-film-name="AI 真人剧" aria-label="AI 真人剧" aria-expanded="false" aria-pressed="true" aria-controls="film-panel-real"><span class="reel-object"><img src="assets/film-carousel/cartridge-cream.png" alt="" width="1280" height="1280" draggable="false"></span><span class="reel-label"><b>01</b><strong>AI 真人剧</strong></span><span class="reel-count">03 部作品</span></button>
+<button class="reel-category" type="button" data-film-category="travel" data-film-name="创意文旅" aria-label="创意文旅" aria-expanded="false" aria-pressed="false" aria-controls="film-panel-travel"><span class="reel-object"><img src="assets/film-carousel/cartridge-coral.png" alt="" width="1280" height="1280" draggable="false"></span><span class="reel-label"><b>02</b><strong>创意文旅</strong></span><span class="reel-count">01 部作品</span></button>
+<button class="reel-category" type="button" data-film-category="tvc" data-film-name="TVC 广告" aria-label="TVC 广告" aria-expanded="false" aria-pressed="false" aria-controls="film-panel-tvc"><span class="reel-object"><img src="assets/film-carousel/cartridge-coral.png" alt="" width="1280" height="1280" draggable="false"></span><span class="reel-label"><b>03</b><strong>TVC 广告</strong></span><span class="reel-count">01 部作品</span></button>
+<button class="reel-category" type="button" data-film-category="3d" data-film-name="3D 短片" aria-label="3D 短片" aria-expanded="false" aria-pressed="false" aria-controls="film-panel-3d"><span class="reel-object"><img src="assets/film-carousel/cartridge-sage.png" alt="" width="1280" height="1280" draggable="false"></span><span class="reel-label"><b>04</b><strong>3D 短片</strong></span><span class="reel-count">02 部作品</span></button>
+<button class="reel-category" type="button" data-film-category="2d" data-film-name="2D 短片" aria-label="2D 短片" aria-expanded="false" aria-pressed="false" aria-controls="film-panel-2d"><span class="reel-object"><img src="assets/film-carousel/cartridge-cream.png" alt="" width="1280" height="1280" draggable="false"></span><span class="reel-label"><b>05</b><strong>2D 短片</strong></span><span class="reel-count">01 部作品</span></button></div></div>
+    <div class="reel-controls"><button class="reel-arrow" type="button" data-reel-step="-1" aria-label="上一卷胶片">←</button><p class="reel-selection" id="machine-status" aria-live="polite">AI 真人剧</p><button class="reel-arrow" type="button" data-reel-step="1" aria-label="下一卷胶片">→</button></div>
+    <div class="film-room-caption"><p>左右拖动选片 · 点击胶片查看作品</p><span>YUMYULUCK / FILM COLLECTION</span></div>
+    <p class="film-announcer" id="film-announcer" role="status" aria-live="polite"></p>
+
+<section class="film-panel" id="film-panel-real" data-film-panel="real" aria-labelledby="film-title-real" hidden><header class="film-panel-heading"><div><p>LIVE ACTION / 03</p><h3 id="film-title-real">AI 真人剧</h3></div><button class="film-panel-close" type="button" aria-label="收起AI 真人剧">收回胶片 <span aria-hidden="true">↥</span></button></header><div class="film-strip"><div class="film-item"><a class="film-frame" href="projects/ter-traditum.html" aria-label="进入三次转手项目页"><img src="assets/01-ter-traditum-v2.png" alt="三次转手作品封面" loading="lazy" width="1672" height="941"><span class="film-frame-action">进入项目 <b aria-hidden="true">↗</b></span></a><div class="film-frame-caption"><h4>三次转手</h4><a href="projects/ter-traditum.html" aria-label="进入三次转手作品详情">作品详情 ↗</a></div></div><div class="film-item"><a class="film-frame" href="projects/golden-wish.html" aria-label="进入冥王求爱，我只想搞钱项目页"><img src="assets/04-golden-wish.png" alt="冥王求爱，我只想搞钱作品封面" loading="lazy" width="1672" height="941"><span class="film-frame-action">进入项目 <b aria-hidden="true">↗</b></span></a><div class="film-frame-caption"><h4>冥王求爱，我只想搞钱</h4><a href="projects/golden-wish.html" aria-label="进入冥王求爱，我只想搞钱作品详情">作品详情 ↗</a></div></div><div class="film-item"><a class="film-frame" href="projects/reverse-scent.html" aria-label="进入逆香项目页"><img src="assets/reverse-scent-cover.jpg" alt="逆香作品封面" loading="lazy" width="1672" height="941"><span class="film-frame-action">进入项目 <b aria-hidden="true">↗</b></span></a><div class="film-frame-caption"><h4>逆香</h4><a href="projects/reverse-scent.html" aria-label="进入逆香作品详情">作品详情 ↗</a></div></div></div></section>
+<section class="film-panel" id="film-panel-travel" data-film-panel="travel" aria-labelledby="film-title-travel" style="--cassette-color:#7c8058" hidden><header class="film-panel-heading"><div><p>CULTURE & TRAVEL / 01</p><h3 id="film-title-travel">创意文旅</h3></div><button class="film-panel-close" type="button" aria-label="收起创意文旅">收回胶片 <span aria-hidden="true">↥</span></button></header>
+<div class="film-strip is-single">
+<div class="film-item"><a class="film-frame" href="projects/dunhuang.html" aria-label="进入敦煌 · 不止千年项目页"><img src="assets/02-dunhuang.png" alt="敦煌 · 不止千年作品封面" loading="lazy" width="1672" height="941"><span class="film-frame-action">进入项目 <b aria-hidden="true">↗</b></span></a><div class="film-frame-caption"><h4>敦煌 · 不止千年</h4><a href="projects/dunhuang.html" aria-label="进入敦煌 · 不止千年作品详情">作品详情 ↗</a></div></div>
+</div>
+</section>
+<section class="film-panel" id="film-panel-tvc" data-film-panel="tvc" aria-labelledby="film-title-tvc" hidden><header class="film-panel-heading"><div><p>COMMERCIAL / 01</p><h3 id="film-title-tvc">TVC 广告</h3></div><button class="film-panel-close" type="button" aria-label="收起TVC 广告">收回胶片 <span aria-hidden="true">↥</span></button></header><div class="film-strip is-single"><div class="film-item"><a class="film-frame" href="projects/veo.html" aria-label="进入VEO项目页"><img src="assets/veo-cover.png" alt="VEO作品封面" loading="lazy" width="1672" height="941"><span class="film-frame-action">进入项目 <b aria-hidden="true">↗</b></span></a><div class="film-frame-caption"><h4>VEO</h4><a href="projects/veo.html" aria-label="进入VEO作品详情">作品详情 ↗</a></div></div></div></section>
+<section class="film-panel" id="film-panel-3d" data-film-panel="3d" aria-labelledby="film-title-3d" hidden><header class="film-panel-heading"><div><p>3D ANIMATION / 02</p><h3 id="film-title-3d">3D 短片</h3></div><button class="film-panel-close" type="button" aria-label="收起3D 短片">收回胶片 <span aria-hidden="true">↥</span></button></header><div class="film-strip"><div class="film-item"><a class="film-frame" href="projects/dragon-guardian.html" aria-label="进入龙之守护者项目页"><img src="assets/03-dragon-guardian.png" alt="龙之守护者作品封面" loading="lazy" width="1672" height="941"><span class="film-frame-action">进入项目 <b aria-hidden="true">↗</b></span></a><div class="film-frame-caption"><h4>龙之守护者</h4><a href="projects/dragon-guardian.html" aria-label="进入龙之守护者作品详情">作品详情 ↗</a></div></div><div class="film-item"><a class="film-frame" href="projects/fluffy-knight.html" aria-label="进入软乎乎骑士项目页"><img src="assets/fluffy-knight-cover.jpg" alt="软乎乎骑士作品封面" loading="lazy" width="1672" height="941"><span class="film-frame-action">进入项目 <b aria-hidden="true">↗</b></span></a><div class="film-frame-caption"><h4>软乎乎骑士</h4><a href="projects/fluffy-knight.html" aria-label="进入软乎乎骑士作品详情">作品详情 ↗</a></div></div></div></section>
+<section class="film-panel" id="film-panel-2d" data-film-panel="2d" aria-labelledby="film-title-2d" hidden><header class="film-panel-heading"><div><p>2D ANIMATION / 01</p><h3 id="film-title-2d">2D 短片</h3></div><button class="film-panel-close" type="button" aria-label="收起2D 短片">收回胶片 <span aria-hidden="true">↥</span></button></header><div class="film-strip is-single"><div class="film-item"><a class="film-frame" href="projects/sakura.html" aria-label="进入恋与樱花项目页"><img src="assets/05-sakura.jpg" alt="恋与樱花作品封面" loading="lazy" width="1672" height="941"><span class="film-frame-action">进入项目 <b aria-hidden="true">↗</b></span></a><div class="film-frame-caption"><h4>恋与樱花</h4><a href="projects/sakura.html" aria-label="进入恋与樱花作品详情">作品详情 ↗</a></div></div></div></section>
+<noscript><p class="film-noscript">作品直达：<a href="#project-01">三次转手</a> / <a href="#project-02">敦煌</a> / <a href="#project-03">龙之守护者</a> / <a href="#project-04">冥王求爱，我只想搞钱</a> / <a href="#project-05">恋与樱花</a> / <a href="#project-06">逆香</a> / <a href="#project-07">软乎乎骑士</a> / <a href="#project-08">VEO</a></p></noscript></section>
+
+  <article class="project roman" id="project-01" aria-labelledby="title-01">
+    <div class="project-top"><span>01 / 08</span><span>HISTORICAL NARRATIVE</span><span>历史叙事</span></div>
+    <div class="project-title"><h2 id="title-01">三次转手</h2><p>TER TRADITUM</p></div>
+    <a class="artwork" href="projects/ter-traditum.html" aria-label="进入三次转手项目页"><img src="assets/01-ter-traditum-v2.png" alt="三次转手海报：云端之上的男女俯瞰古罗马城市，一枚金币坠向人间" loading="lazy" width="1672" height="941"><span class="view-label">进入项目 <b>↗</b></span></a>
+    <div class="project-bottom"><p>古罗马的金色余晖，跨越时空的人物群像。</p><span>01 — 历史与时间</span></div>
+  </article>
+
+  <article class="project dunhuang" id="project-02" aria-labelledby="title-02">
+    <div class="project-top"><span>02 / 08</span><span>EASTERN AESTHETICS</span><span>东方美学</span></div>
+    <div class="project-title"><h2 id="title-02">敦煌<span class="separator">·</span>不止千年</h2><p>BEYOND A THOUSAND YEARS</p></div>
+    <a class="artwork" href="projects/dunhuang.html" aria-label="进入敦煌 · 不止千年项目页"><img src="assets/02-dunhuang.png" alt="敦煌海报：沙丘、石窟、绿洲与飞天，在宣纸般的底色中展开" loading="lazy" width="1672" height="941"><span class="view-label">进入项目 <b>↗</b></span></a>
+    <div class="project-bottom"><p>大漠、石窟与飞天，展开一幅流动的东方画卷。</p><span>02 — 文化与山河</span></div>
+  </article>
+
+  <article class="project dragon" id="project-03" aria-labelledby="title-03">
+    <div class="project-top"><span>03 / 08</span><span>FANTASY ANIMATION</span><span>奇幻动画</span></div>
+    <div class="project-title"><h2 id="title-03">龙之守护者</h2><p>DRAGON GUARDIAN</p></div>
+    <a class="artwork" href="projects/dragon-guardian.html" aria-label="进入龙之守护者项目页"><img src="assets/03-dragon-guardian.png" alt="龙之守护者海报：白发少年拥抱红色幼龙，巨龙在身后守望" loading="lazy" width="1672" height="941"><span class="view-label">进入项目 <b>↗</b></span></a>
+    <div class="project-bottom"><p>森林深处的暖光，少年与龙相依的瞬间。</p><span>03 — 冒险与羁绊</span></div>
+  </article>
+
+  <article class="project hades" id="project-04" aria-labelledby="title-04">
+    <div class="project-top"><span>04 / 08</span><span>ROMANTIC FANTASY</span><span>浪漫幻想</span></div>
+    <div class="project-title"><h2 id="title-04">冥王求爱，我只想搞钱</h2><p>HADES & THE GOLDEN WISH</p></div>
+    <a class="artwork" href="projects/golden-wish.html" aria-label="进入冥王求爱，我只想搞钱项目页"><img src="assets/04-golden-wish.png" alt="冥王求爱，我只想搞钱海报：紫焰宫殿中，金发少女与戴荆棘王冠的男子相依" loading="lazy" width="1672" height="941"><span class="view-label">进入项目 <b>↗</b></span></a>
+    <div class="project-bottom"><p>紫色焰火与金色微光，交织成华丽的幻想。</p><span>04 — 神话与心愿</span></div>
+  </article>
+
+  <article class="project sakura" id="project-05" aria-labelledby="title-05">
+    <div class="project-top"><span>05 / 08</span><span>YOUTH & ANIME</span><span>青春动漫</span></div>
+    <div class="project-title"><h2 id="title-05">恋与樱花</h2><p>LOVE & SAKURA</p></div>
+    <a class="artwork" href="projects/sakura.html" aria-label="进入恋与樱花项目页"><img src="assets/05-sakura.jpg" alt="恋与樱花海报：红发少女与三位少年，在飞舞的粉色樱花间定格" loading="lazy" width="1672" height="941"><span class="view-label">进入项目 <b>↗</b></span></a>
+    <div class="project-bottom"><p>红发、制服与飞舞的樱花，定格鲜明的青春表情。</p><span>05 — 青春与心动</span></div>
+  </article>
+
+<article class="project project-reverse-scent" id="project-06" aria-labelledby="title-06"><div class="project-top"><span>06 / 08</span><span>AI LIVE ACTION</span><span>AI 真人剧</span></div><div class="project-title"><h2 id="title-06">逆香</h2><p>AI LIVE ACTION</p></div><a class="artwork" href="projects/reverse-scent.html" aria-label="进入逆香项目页"><img src="assets/reverse-scent-cover.jpg" alt="逆香作品封面" loading="lazy" width="1672" height="941"><span class="view-label">进入项目 <b>↗</b></span></a><div class="project-bottom"><p>AI 真人剧作品。</p><span>AI 真人剧</span></div></article><article class="project project-fluffy-knight" id="project-07" aria-labelledby="title-07"><div class="project-top"><span>07 / 08</span><span>3D ANIMATION</span><span>3D 短片</span></div><div class="project-title"><h2 id="title-07">软乎乎骑士</h2><p>3D ANIMATION</p></div><a class="artwork" href="projects/fluffy-knight.html" aria-label="进入软乎乎骑士项目页"><img src="assets/fluffy-knight-cover.jpg" alt="软乎乎骑士作品封面" loading="lazy" width="1672" height="941"><span class="view-label">进入项目 <b>↗</b></span></a><div class="project-bottom"><p>3D 动画短片。</p><span>3D 短片</span></div></article><article class="project project-veo" id="project-08" aria-labelledby="title-08"><div class="project-top"><span>08 / 08</span><span>COMMERCIAL</span><span>TVC 广告</span></div><div class="project-title"><h2 id="title-08">VEO</h2><p>COMMERCIAL</p></div><a class="artwork" href="projects/veo.html" aria-label="进入VEO项目页"><img src="assets/veo-cover.png" alt="VEO作品封面" loading="lazy" width="1672" height="941"><span class="view-label">进入项目 <b>↗</b></span></a><div class="project-bottom"><p>VEO 宠物 AI 摄像头广告作品。</p><span>TVC 广告</span></div></article>
+
+
+
+  <footer id="closing" class="footer"><p class="eyebrow">A PERSPECTIVE ON CREATION</p><h2>想象不设边界。<br><span>故事，自有形状。</span></h2><div class="footer-bottom"><p>AI 影像个人作品集<br><span>历史叙事 / 东方美学 / 奇幻动画 / 浪漫幻想 / 青春动漫</span></p><a href="#home">回到开场 <b>↑</b></a></div></footer>
+</main>
+<div class="reading-progress" aria-hidden="true"></div>
+</body>
+</html>

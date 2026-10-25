@@ -1,0 +1,48 @@
+/* A paper-like creator portrait, scoped to the introduction chapter. */
+.profile{scroll-margin-top:-92px;padding:98px 6% 24px;min-height:100svh;display:grid;align-items:center;overflow:hidden;color:#202921;background:#f2efe6}
+.profile-inner{width:100%;max-width:1320px;margin:0 auto}
+.profile-topline{display:flex;justify-content:space-between;gap:20px;font-size:9px;letter-spacing:.16em;color:#67685d}
+.profile-topline p:last-child{letter-spacing:.1em}.profile-topline span{margin-left:35px;font-size:8px}
+.profile-stage{--portrait-height:clamp(340px,52svh,560px);display:grid;grid-template-columns:minmax(0,1fr) calc(var(--portrait-height)*.8) minmax(0,1fr);gap:clamp(24px,4vw,65px);height:var(--portrait-height);align-items:center;position:relative;margin-top:30px}
+.profile-greeting{position:relative;padding-left:3%}
+.profile-hello{font-family:ManropeTitle,Arial,sans-serif;font-size:clamp(58px,7.2vw,112px);line-height:.91;letter-spacing:-.065em;font-weight:700}
+.profile-handnote{margin:29px 0 0 7px;font-family:"STKaiti","KaiTi",serif;font-size:19px;letter-spacing:.04em;transform:rotate(-5deg)}
+.profile-arrow{width:clamp(95px,10vw,145px);position:absolute;right:-18px;bottom:-65px;transform:rotate(-12deg)}
+.profile svg{stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}
+.profile-portrait{position:relative;margin:0;width:100%;height:100%}
+.profile-photo{width:100%;height:100%;transform:rotate(-4deg);transition:transform 650ms cubic-bezier(.22,1,.36,1)}
+.profile-photo::before{content:"";position:absolute;inset:8px -10px -8px 10px;border:1px solid #202921;transform:rotate(3deg);pointer-events:none}
+.profile-photo img{position:relative;display:block;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.profile-portrait:hover .profile-photo{transform:rotate(-1deg)}
+.profile-portrait figcaption{position:absolute;bottom:-29px;left:50%;transform:translateX(-50%) rotate(-3deg);white-space:nowrap;font-size:8px;letter-spacing:.18em;color:#65675e}
+.profile-info{position:relative;padding-left:3%}
+.profile-intro{font-size:13px;letter-spacing:.16em;margin-bottom:19px}
+.profile-name-wrap{position:relative;display:inline-block}
+.profile-info h2{position:relative;z-index:1;font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;font-size:clamp(68px,7.4vw,118px);font-weight:600;letter-spacing:-.06em;line-height:1.25}
+.profile-name-circle{position:absolute;width:132%;height:142%;left:-16%;top:-15%;transform:rotate(-8deg);opacity:.78}
+.profile-english{position:relative;font-family:ManropeTitle,Arial,sans-serif;font-size:clamp(14px,1.6vw,22px);letter-spacing:.14em;margin-top:22px}
+.profile-role{font-size:12px;letter-spacing:.1em;margin-top:31px;color:#606658}
+.profile-underline{width:150px;height:18px;margin-top:1px;color:#9b7048}
+.profile-spark{position:absolute;top:-20px;left:25%;width:53px;height:61px;transform:rotate(-13deg)}
+.profile-asterisk{position:absolute;bottom:9%;right:1%;width:45px;height:45px;transform:rotate(15deg);color:#9b7048}
+.profile-footer{margin-top:54px;border-top:1px solid #20292130;padding-top:21px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.profile-contacts{display:flex;flex-wrap:wrap;gap:16px 36px}
+.profile-contacts a{display:flex;align-items:baseline;gap:12px;padding:8px 0}
+.profile-contacts a>span{font-size:10px;color:#77796e}
+.profile-contacts strong{font-size:13px;font-weight:400;letter-spacing:.025em;overflow-wrap:anywhere}
+.profile-contacts a:hover strong{text-decoration:underline;text-underline-offset:5px}
+.profile-next{display:inline-flex;align-items:center;gap:26px;padding:8px 0;font-size:11px;letter-spacing:.06em;white-space:nowrap}
+.profile-next span{font-size:23px;transition:transform 220ms ease}.profile-next:hover span{transform:translateY(4px)}
+@media(min-width:701px) and (max-height:760px){.profile{padding-top:94px}.profile-stage{--portrait-height:clamp(320px,49svh,380px);margin-top:23px}.profile-footer{margin-top:48px}}
+@media(max-width:700px){
+ .profile{padding:100px 7% 38px;min-height:auto}.profile-topline{font-size:8px}.profile-topline span{margin-left:16px}
+ .profile-stage{grid-template-columns:1fr 1fr;height:auto;gap:32px 18px;margin-top:37px}
+ .profile-greeting{grid-column:1;grid-row:1;padding:0;align-self:center}.profile-hello{font-size:clamp(48px,14vw,80px)}.profile-handnote{margin:15px 0 0;font-size:14px}.profile-arrow{display:none}
+ .profile-info{grid-column:2;grid-row:1;padding-left:8px}.profile-intro{font-size:10px;margin-bottom:12px}.profile-info h2{font-size:clamp(53px,15vw,84px)}
+ .profile-english{font-size:clamp(11px,3.2vw,17px);letter-spacing:.09em;margin-top:13px}.profile-role{font-size:10px;margin-top:17px}.profile-underline{width:112px;height:12px}
+ .profile-portrait{grid-column:1/-1;grid-row:2;justify-self:center;width:min(76vw,330px);height:auto;aspect-ratio:1080/1349;margin-top:13px}
+ .profile-spark{top:auto;bottom:38%;left:-2%;width:34px;height:40px}.profile-asterisk{bottom:4%;right:-3%;width:35px;height:35px}
+ .profile-footer{margin-top:53px;padding-top:18px;flex-wrap:wrap;gap:14px}.profile-contacts{flex-direction:column;gap:0;width:100%}.profile-contacts a{gap:18px}.profile-contacts strong{font-size:13px}.profile-next{margin-left:auto}
+}
+@media(max-width:640px){.profile{scroll-margin-top:-76px}}
+@media(prefers-reduced-motion:reduce){.profile-photo,.profile-next span{transition:none}}

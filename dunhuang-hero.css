@@ -1,0 +1,72 @@
+/* This opening composition belongs only to the Dunhuang project. */
+.project-dunhuang .project-masthead{padding-top:153px;padding-bottom:24px}
+.project-dunhuang .project-masthead::before{top:136px;background:linear-gradient(145deg,#fffdf77a,#fffaf052);backdrop-filter:blur(12px) saturate(.85);-webkit-backdrop-filter:blur(12px) saturate(.85)}
+.dunhuang-hero-heading{display:flex;justify-content:space-between;align-items:center;gap:40px;padding:25px 0 29px}
+.project-dunhuang .dunhuang-hero-heading h1{display:flex;align-items:center;gap:24px;font-family:"Songti SC",SimSun,serif;font-weight:400;color:#473728;line-height:1.1;white-space:nowrap}
+.dunhuang-title-place{font-size:clamp(56px,6.5vw,88px);letter-spacing:.08em}.dunhuang-title-name{font-size:clamp(25px,2.8vw,38px);letter-spacing:.16em;border-left:1px solid #b8915a70;padding:9px 0 9px 25px}
+.dunhuang-title-en{margin-top:15px;font-size:9px;letter-spacing:.2em;color:#a18762}.dunhuang-hero-intro{max-width:250px;font-family:"Songti SC",SimSun,serif;font-size:16px;line-height:1.9;color:#89704f;letter-spacing:.07em;text-wrap:pretty}
+.dunhuang-media{width:min(100%,calc((100svh - 345px)*1.777778));min-width:min(100%,480px);margin-inline:auto}
+.project-dunhuang .project-screen{position:relative;overflow:hidden;border:1px solid #fff9e880;border-radius:5px;background:#342a20;box-shadow:0 16px 40px -20px #6c4f3299}
+.project-dunhuang .project-screen video{display:block;width:100%;height:auto;aspect-ratio:16/9;max-height:none;background:#342a20}
+.dunhuang-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;align-items:center;gap:12px;border:1px solid #fff8e9a0;border-radius:50px;padding:12px 22px 12px 15px;background:#fff8e9d9;color:#60462b;backdrop-filter:blur(15px);font:inherit;font-size:12px;letter-spacing:.12em;cursor:pointer;box-shadow:0 4px 22px #30200f22;transition:background .2s,box-shadow .2s}
+.dunhuang-play[hidden]{display:none}.dunhuang-play:hover{background:#fff8e9;box-shadow:0 5px 28px #30200f44}.dunhuang-play-mark{width:32px;height:32px;border:1px solid #bda07866;border-radius:50%;display:grid;place-items:center}.dunhuang-play svg{width:12px;height:12px;margin-left:2px;fill:currentColor}.project-dunhuang .project-screen-caption{margin-top:16px;font-size:9px;letter-spacing:.08em;align-items:center;color:#907959}.dunhuang-caption-left{display:flex;gap:10px;align-items:center}.dunhuang-caption-line{display:inline-block;width:26px;height:1px;background:#c0a471}.dunhuang-watch-note{font-size:8px;color:#a18a6a}
+@media(max-width:800px){.dunhuang-hero-heading{gap:25px}.dunhuang-hero-intro{max-width:190px;font-size:14px}.project-dunhuang .dunhuang-hero-heading h1{gap:16px}.dunhuang-title-name{padding-left:17px;letter-spacing:.08em}.dunhuang-media{width:100%;min-width:0}}
+@media(max-width:600px){.project-dunhuang .project-masthead{padding-top:140px;padding-bottom:8px}.project-dunhuang .project-masthead::before{top:122px}.dunhuang-hero-heading{display:block;padding:25px 0 23px}.dunhuang-title-place{font-size:55px}.dunhuang-title-name{font-size:25px}.dunhuang-title-en{font-size:7px;letter-spacing:.14em;margin-top:12px}.dunhuang-hero-intro{font-size:13px;line-height:1.8;max-width:100%;margin-top:20px;letter-spacing:.035em}.dunhuang-play{padding:8px 15px 8px 9px;gap:8px;font-size:10px}.dunhuang-play-mark{width:28px;height:28px}.project-dunhuang .project-screen-caption{font-size:7px;margin-top:12px;letter-spacing:.03em;gap:10px}.dunhuang-watch-note{font-size:7px}.dunhuang-caption-line{width:16px}}
+@media(max-width:360px){.dunhuang-title-place{font-size:45px}.dunhuang-title-name{font-size:21px}.project-dunhuang .dunhuang-hero-heading h1{gap:13px}.dunhuang-title-name{padding-left:13px}}
+@media(prefers-reduced-motion:reduce){.dunhuang-play{transition:none}}
+
+/* Restore the broad continuous opening sheet and large film composition. */
+.project-dunhuang .dunhuang-opening,.project-dunhuang .page-section,.project-dunhuang .detail-footer{width:88%;max-width:1320px;margin-inline:auto}
+.project-dunhuang .dunhuang-opening{position:relative;isolation:isolate;margin-top:136px;padding:20px 0 4px}
+.project-dunhuang .dunhuang-opening::before{content:"";position:absolute;inset:0 -24px -24px;z-index:-1;pointer-events:none;background:linear-gradient(135deg,#fffdf57d,#fff9e957);backdrop-filter:blur(10px) saturate(.85);-webkit-backdrop-filter:blur(10px) saturate(.85);border:1px solid #ffffff80;border-radius:12px;box-shadow:0 10px 35px #88632e0a}
+.project-dunhuang .dunhuang-opening .project-masthead{width:100%;max-width:none;padding:0}
+.project-dunhuang .project-masthead::before,.project-dunhuang .dunhuang-film::before{display:none}
+.dunhuang-hero-heading{display:block;padding:16px 0 12px}
+.dunhuang-title-place{font-size:62px}.dunhuang-title-name{font-size:28px;padding-block:6px;letter-spacing:.12em}
+.dunhuang-title-en{margin-top:12px}
+.dunhuang-introduction{scroll-margin-top:145px}
+.project-dunhuang .dunhuang-introduction .project-summary>p{max-width:720px;font-size:18px;line-height:1.65}
+.project-dunhuang .dunhuang-introduction .project-summary dl{display:flex;flex-wrap:wrap;gap:12px 26px;margin-top:12px;padding-top:0;border-top:0;width:fit-content;max-width:100%}
+.project-dunhuang .dunhuang-introduction .project-summary dl>div{display:flex;align-items:baseline;gap:10px}
+.project-dunhuang .dunhuang-introduction .project-summary dt{margin:0;font-size:10px}
+.project-dunhuang .dunhuang-introduction .project-summary dd{font-size:11px}
+.project-dunhuang .dunhuang-opening .dunhuang-film{width:100%;max-width:none;margin-top:24px;padding-top:0;border:0;scroll-margin-top:145px}
+.dunhuang-media{width:100%;max-width:none;min-width:0;margin-inline:auto}
+.project-dunhuang .project-screen{border:0;border-radius:0;box-shadow:none;background:transparent}
+.project-dunhuang .project-screen video{background:transparent;border:0;border-radius:0;box-shadow:none;object-fit:cover}
+.dunhuang-play{border-color:#fffaf178;background:linear-gradient(135deg,#fff9ee38,#fff9ee14);color:#fffdf6;backdrop-filter:blur(18px) saturate(1.2);-webkit-backdrop-filter:blur(18px) saturate(1.2);box-shadow:inset 0 1px 0 #ffffff3d,0 6px 22px #3f28142b;text-shadow:0 1px 4px #32200e66}
+.dunhuang-play:hover{background:linear-gradient(135deg,#fff9ee50,#fff9ee25);box-shadow:inset 0 1px 0 #ffffff55,0 8px 24px #3f28143d}
+.dunhuang-play-mark{border-color:#fffdf05c;background:#fffef30a}
+@media(max-width:700px){
+.project-dunhuang .dunhuang-opening,.project-dunhuang .page-section,.project-dunhuang .detail-footer{width:86%}
+.project-dunhuang .dunhuang-opening{margin-top:123px;padding-top:18px}
+.dunhuang-title-place{font-size:48px}.dunhuang-title-name{font-size:23px}
+.dunhuang-hero-heading{padding-top:16px;padding-bottom:12px}
+.project-dunhuang .dunhuang-opening::before{left:-14px;right:-14px;bottom:-16px;border-radius:9px}
+.dunhuang-introduction{scroll-margin-top:130px}
+.project-dunhuang .dunhuang-introduction .project-summary>p{font-size:17px}
+.project-dunhuang .dunhuang-introduction .project-summary dl{gap:10px 20px}
+.project-dunhuang .dunhuang-film{margin-top:24px;scroll-margin-top:130px}
+}
+
+/* Share the opening row between the title and project details. */
+.project-dunhuang .dunhuang-opening .project-masthead{display:grid;grid-template-columns:minmax(360px,1fr) minmax(0,1fr);column-gap:60px;align-items:center}
+.project-dunhuang .project-breadcrumb{grid-column:1/-1}
+.dunhuang-hero-heading{grid-column:1;padding:16px 0 0}
+.dunhuang-introduction{grid-column:2;justify-self:end;max-width:530px;padding-top:12px}
+.project-dunhuang .dunhuang-introduction .project-summary>p{font-size:18px;line-height:1.8;text-wrap:pretty}
+.project-dunhuang .dunhuang-introduction .project-summary dl{margin-top:18px;gap:12px 28px}
+@media(max-width:1000px) and (min-width:761px){
+.project-dunhuang .dunhuang-opening .project-masthead{grid-template-columns:minmax(300px,1fr) minmax(0,1fr);column-gap:32px}
+.dunhuang-title-place{font-size:54px}.dunhuang-title-name{font-size:25px;padding-left:18px}
+.project-dunhuang .dunhuang-hero-heading h1{gap:18px}
+.project-dunhuang .dunhuang-introduction .project-summary>p{font-size:16px}
+.project-dunhuang .dunhuang-introduction .project-summary dl{gap:8px 18px;margin-top:12px}
+}
+@media(max-width:760px){
+.project-dunhuang .dunhuang-opening .project-masthead{display:block}
+.dunhuang-hero-heading{padding:16px 0 12px}
+.dunhuang-introduction{max-width:none;padding-top:0}
+.project-dunhuang .dunhuang-introduction .project-summary>p{font-size:17px}
+.project-dunhuang .dunhuang-introduction .project-summary dl{margin-top:12px;gap:10px 20px}
+}
