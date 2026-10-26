@@ -11,8 +11,8 @@
 .project .project-bottom>p{opacity:.86}
 @media(max-width:640px){.project::before{inset:-44px;filter:blur(28px) saturate(.84)}.project .artwork{box-shadow:0 12px 32px rgba(5,10,14,.17)}}
 
-.project.project-reverse-scent{--project-cover:url('assets/reverse-scent-cover.jpg');--project-base:#292722;--accent:#dfc69d;color:#f5eee0}
-.project.project-fluffy-knight{--project-cover:url('assets/fluffy-knight-cover.jpg');--project-base:#223329;--accent:#dfc69d;color:#f5eee0}
+.project.project-reverse-scent{--project-cover:url('assets/reverse-scent/visuals/incense-background.png');--project-base:#292722;--accent:#dfc69d;color:#f5eee0}
+.project.project-fluffy-knight{--project-cover:url('assets/fluffy-knight/visuals/ivory-blue-background.png');--project-base:#223329;--accent:#dfc69d;color:#f5eee0}
 .project.project-veo{--project-cover:url('assets/veo-cover.png');--project-base:#eee6d8;--glass-top:rgba(248,243,231,.86);--glass-middle:rgba(248,243,231,.64);--glass-bottom:rgba(248,243,231,.89);--accent:#74502c;color:#322b20}
 
 .project.roman{--project-base:#420f1c;--glass-top:rgba(71,12,24,.88);--glass-middle:rgba(71,12,24,.65);--glass-bottom:rgba(52,7,16,.93);--accent:#d9b684;color:#fff3e2}

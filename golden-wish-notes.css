@@ -1,0 +1,5 @@
+/* Compact vertical storyboard previews; full images remain available in the lightbox. */
+[data-project="golden-wish"] .notebook-portrait-boards{grid-template-columns:repeat(auto-fit,minmax(120px,180px));gap:18px 14px;justify-content:start}
+[data-project="golden-wish"] .notebook-portrait-boards img,[data-project="golden-wish"] .notebook-portrait-boards .notebook-figure:first-child img{aspect-ratio:auto;height:auto;object-fit:contain}
+@media(max-width:760px){[data-project="golden-wish"] .notebook-portrait-boards{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:580px){[data-project="golden-wish"] .notebook-portrait-boards{grid-template-columns:repeat(2,minmax(0,1fr))}}

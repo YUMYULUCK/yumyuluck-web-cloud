@@ -1,0 +1,3 @@
+/* Four creative-note chapters on this project; keep the existing mobile breakpoint. */
+@media(max-width:760px){[data-project="ter-traditum"] .notebook-nav{grid-template-columns:repeat(4,minmax(0,1fr))}}
+[data-project="ter-traditum"] #making-awards .notebook-production-figure img{aspect-ratio:auto}
