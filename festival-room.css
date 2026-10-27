@@ -1,0 +1,138 @@
+/* Private film festival: styles are contained within the works section. */
+.film-festival{background:#f7f3eb;color:#282821;color-scheme:light;padding:100px 0 36px;scroll-margin-top:0;overflow:clip;font-family:Arial,"Microsoft YaHei",sans-serif}
+.film-festival .festival-wrap{width:min(1320px,calc(100% - 112px));margin-inline:auto}
+.film-festival h2,.film-festival h3,.film-festival p{margin:0}
+.film-festival img{display:block;max-width:100%}
+.film-festival .festival-serif{font-family:Georgia,"Songti SC",SimSun,serif}
+.film-festival .festival-eyebrow{font-size:10px;letter-spacing:.23em;font-weight:500}
+.film-festival a,.film-festival button{-webkit-tap-highlight-color:transparent}
+.film-festival a:focus-visible,.film-festival button:focus-visible{outline:2px solid #ec704d;outline-offset:4px}
+.film-festival .festival-wrap{width:min(1320px,calc(100% - 112px));margin-inline:auto}
+.film-festival .festival-serif{font-family:Georgia,"Songti SC",SimSun,serif}
+.film-festival .festival-eyebrow{font-size:10px;letter-spacing:.23em;font-weight:500}
+.film-festival .festival-filters{display:flex;gap:5px;align-items:center;flex-wrap:wrap}
+.film-festival .festival-filters button{border:0;background:transparent;padding:10px 15px;border-radius:30px;font-size:11px;color:#8d877b;white-space:nowrap;transition:background .2s,color .2s}
+.film-festival .festival-filters button:hover{background:#e9dfd0;color:#262a24}
+.film-festival .festival-filters button[aria-pressed=true]{background:#e97854;color:#fff}
+.film-festival .festival{padding-top:55px}
+.film-festival .f-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:25px}
+.film-festival .f-heading .festival-eyebrow{color:#9b8e78;margin-bottom:15px}
+.film-festival .f-heading h2{font-size:clamp(34px,4.2vw,62px);letter-spacing:-.055em;font-weight:600;line-height:1.15}
+.film-festival .f-heading h2>span{color:#ea754f}
+.film-festival .f-intro{font-size:12px;line-height:1.9;color:#918879;text-align:right}
+.film-festival .f-filter-row{display:flex;align-items:center;gap:26px;border-top:1px solid #ded5c7;border-bottom:1px solid #ded5c7;padding:12px 0;margin-top:32px;font-size:8px;letter-spacing:.13em;color:#a39b8d}
+.film-festival .f-filter-row .total{margin-left:auto;font-size:9px}
+.film-festival .f-layout{display:grid;grid-template-columns:minmax(0,2.4fr) minmax(240px,1fr);gap:32px;margin-top:28px}
+.film-festival .f-feature{min-width:0}
+.film-festival .f-screen{position:relative;overflow:hidden;border-radius:3px;background:#272a23;aspect-ratio:16/9;display:block}
+.film-festival .f-screen>img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.film-festival .f-screen:hover>img{transform:scale(1.035)}
+.film-festival .f-screen:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 40%,#0d11084d)}
+.film-festival .f-screen-label{position:absolute;left:22px;top:22px;background:#ffffffd9;padding:7px 10px;font-size:8px;letter-spacing:.12em;z-index:1}
+.film-festival .f-screen-bottom{position:absolute;inset:auto 24px 24px;display:flex;justify-content:space-between;align-items:center;z-index:1;color:white;font-size:10px}
+.film-festival .festival-open{width:45px;height:45px;border:1px solid #ffffff88;border-radius:50%;display:grid;place-items:center;backdrop-filter:blur(8px);background:#ffffff14;font-size:14px}
+.film-festival .f-caption{display:flex;gap:20px;justify-content:space-between;padding-top:22px}
+.film-festival .f-caption .festival-eyebrow{color:#a08969;font-size:8px}
+.film-festival .f-caption h3{font-family:"Songti SC",SimSun,serif;font-size:29px;font-weight:500;margin-top:9px}
+.film-festival .f-caption p{font-size:11px;line-height:1.9;color:#918675;margin-top:12px}
+.film-festival .f-enter{display:flex;align-items:center;gap:18px;align-self:center;white-space:nowrap;font-size:11px;border-bottom:1px solid #b7a48b;padding-bottom:10px}
+.film-festival .f-enter b{color:#e47955;font-size:22px;font-weight:400}
+.film-festival .f-program-title{display:flex;justify-content:space-between;border-bottom:1px solid #d8cebd;padding-bottom:15px;font-size:12px}
+.film-festival .f-program-title>span:last-child{font-size:8px;letter-spacing:.12em;color:#a99a84}
+.film-festival #festival-program{max-height:490px;overflow:auto;scrollbar-width:thin;scrollbar-color:#d5c9b5 transparent;padding-right:6px}
+.film-festival .f-choice{border:0;background:transparent;width:100%;display:flex;gap:13px;align-items:center;text-align:left;padding:16px 8px;border-bottom:1px solid #e5ddcf;transition:background .2s}
+.film-festival .f-choice[aria-pressed=true]{background:#ece3d4}
+.film-festival .f-choice img{width:86px;height:55px;object-fit:cover;border-radius:2px}
+.film-festival .f-choice-text{flex:1;min-width:0}
+.film-festival .f-choice-text small{display:block;font-size:8px;color:#9d927f;margin-bottom:7px}
+.film-festival .f-choice-text b{font-size:12px;font-weight:500;line-height:1.6;display:block}
+.film-festival .f-choice>span:last-child{font-size:10px;color:#b1a58f}
+.film-festival .f-footer{margin-top:34px;border-top:1px solid #ded5c7;padding:21px 0 30px;display:flex;justify-content:space-between;gap:20px;align-items:center;font-size:9px;color:#9c917e}
+.film-festival .f-footer>span:nth-child(2){font-size:7px;letter-spacing:.13em}
+.film-festival .f-footer b{font-size:11px;color:#746c5b;font-weight:400}
+@media(min-width:1600px){.film-festival .f-program-title{padding-bottom:20px}
+.film-festival .f-choice{padding-block:20px}}
+@media(max-width:1000px){.film-festival .festival-wrap{width:calc(100% - 64px)}
+.film-festival .f-layout{grid-template-columns:minmax(0,1.8fr) minmax(210px,1fr);gap:22px}
+.film-festival .f-filter-row{gap:12px}
+.film-festival .f-filter-row>.total{display:none}
+.film-festival .f-filter-row .festival-filters{gap:0}
+.film-festival .festival-filters button{padding-inline:12px}
+.film-festival .f-caption{display:block}
+.film-festival .f-enter{margin-top:20px;display:inline-flex}
+.film-festival .f-choice img{width:65px;height:45px}
+.film-festival .f-choice{gap:10px;padding-inline:5px}}
+@media(max-width:700px){.film-festival .festival-wrap{width:calc(100% - 40px)}
+.film-festival .festival-filters{gap:1px}
+.film-festival .festival-filters button{font-size:10px;padding:9px 11px}
+.film-festival .festival{padding-top:32px}
+.film-festival .f-heading{display:block}
+.film-festival .f-heading h2{font-size:40px}
+.film-festival .f-intro{font-size:11px;text-align:left;margin-top:17px;line-height:1.8}
+.film-festival .f-intro br{display:none}
+.film-festival .f-heading .festival-eyebrow{font-size:8px;margin-bottom:11px}
+.film-festival .f-filter-row{display:block;font-size:0;margin-top:24px;padding:8px 0}
+.film-festival .f-filter-row .festival-filters{flex-wrap:nowrap;overflow:auto}
+.film-festival .f-layout{display:flex;flex-direction:column;gap:27px;margin-top:20px}
+.film-festival .f-screen{aspect-ratio:1.6}
+.film-festival .f-screen-label{top:13px;left:13px;font-size:7px}
+.film-festival .f-screen-bottom{inset:auto 15px 15px;font-size:9px}
+.film-festival .festival-open{width:35px;height:35px;font-size:11px}
+.film-festival .f-caption{display:flex;padding-top:17px;gap:14px}
+.film-festival .f-caption h3{font-size:24px}
+.film-festival .f-caption p{font-size:10px;line-height:1.9}
+.film-festival .f-caption .festival-eyebrow{font-size:7px}
+.film-festival .f-enter{font-size:9px;margin:0;gap:10px;align-self:flex-start;padding-top:22px}
+.film-festival .f-enter b{font-size:18px}
+.film-festival .f-program-title{font-size:11px}
+.film-festival .f-program-title>span:last-child{font-size:7px}
+.film-festival #festival-program{display:flex;max-height:none;overflow:auto;padding:12px 0;gap:10px}
+.film-festival .f-choice{flex:0 0 145px;display:block;padding:7px;border:1px solid #e5ddcf}
+.film-festival .f-choice img{width:100%;height:auto;aspect-ratio:16/9}
+.film-festival .f-choice-text{display:block;padding-top:9px}
+.film-festival .f-choice-text small{font-size:7px}
+.film-festival .f-choice-text b{font-size:10px}
+.film-festival .f-choice>span:last-child{display:none}
+.film-festival .f-footer{margin-top:16px;display:block;font-size:8px;line-height:2.1}
+.film-festival .f-footer>span:nth-child(2){display:none}
+.film-festival .f-footer b{font-size:9px;display:block}}
+.film-festival .festival{padding-top:0}
+.film-festival .festival-announcer{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.film-festival .festival-noscript{font-size:12px;line-height:2;padding-top:20px}
+.film-festival .festival-noscript a{margin-right:14px;text-decoration:underline;text-underline-offset:4px}
+@media(max-width:700px){.film-festival{padding:90px 0 25px}.film-festival .festival{padding-top:0}}
+@media(prefers-reduced-motion:reduce){.film-festival *{animation:none!important;transition:none!important}}
+
+/* Coordinated project palettes, shared-position indicators and image/text swaps.
+   References: https://transitions.dev/ (Tabs sliding / Text states swap)
+   and https://beui.dev/ (gliding active indicators). No runtime dependency. */
+.film-festival{--festival-paper:#f4e9d6;--festival-ink:#403323;--festival-muted:#958064;--festival-accent:#b27a3e;--festival-tint:#e9d7b8;--festival-line:#d5be9b;background-color:var(--festival-paper);color:var(--festival-ink);transition:background-color 700ms cubic-bezier(.16,1,.3,1),color 550ms ease}
+.film-festival .f-heading h2{color:var(--festival-ink);transition:color 550ms ease}
+.film-festival .f-heading h2>span,.film-festival .f-enter b{color:var(--festival-accent);transition:color 550ms ease}
+.film-festival .f-heading .festival-eyebrow,.film-festival .f-intro,.film-festival .f-filter-row,.film-festival .f-caption .festival-eyebrow,.film-festival .f-caption p,.film-festival .f-choice-text small,.film-festival .f-choice>span:last-child,.film-festival .f-program-title>span:last-child,.film-festival .f-footer,.film-festival .f-footer b{color:var(--festival-muted);transition:color 550ms ease}
+.film-festival .f-filter-row,.film-festival .f-program-title,.film-festival .f-choice,.film-festival .f-footer,.film-festival .f-enter{border-color:var(--festival-line);transition:border-color 550ms ease,color 550ms ease}
+.film-festival .f-enter{color:var(--festival-ink)}
+.film-festival .f-enter b{display:inline-block;transition:transform 320ms cubic-bezier(.16,1,.3,1),color 550ms ease}
+.film-festival .f-enter:hover b{transform:translate(3px,-3px)}
+.film-festival .f-screen{isolation:isolate;background-color:var(--festival-tint);transition:background-color 550ms ease}
+.film-festival .f-screen-label{color:#2c2c29}
+.film-festival .f-screen:after{z-index:2;pointer-events:none}
+.film-festival .f-screen-label,.film-festival .f-screen-bottom{z-index:3}
+.film-festival .f-screen>.festival-cover-outgoing{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;z-index:1}
+.film-festival .f-caption h3{color:var(--festival-ink)}
+.film-festival .f-choice{position:relative;z-index:1;background:transparent;transition:transform 280ms cubic-bezier(.16,1,.3,1),border-color 550ms ease}
+.film-festival.has-festival-motion .f-choice[aria-pressed=true]{background:transparent}
+.film-festival .f-choice:hover{transform:translateX(4px)}
+.film-festival .f-choice:active{transform:translateX(4px) scale(.985)}
+.film-festival #festival-program{position:relative;isolation:isolate;scrollbar-color:var(--festival-line) transparent}
+.film-festival .festival-project-marker{position:absolute;left:0;top:0;z-index:0;pointer-events:none;background:var(--festival-tint);border-left:3px solid var(--festival-accent);border-radius:3px}
+.film-festival .festival-filters{position:relative;isolation:isolate}
+.film-festival .festival-filters button{position:relative;z-index:1;flex-shrink:0;color:var(--festival-muted);transition:color 220ms ease,transform 250ms cubic-bezier(.16,1,.3,1)}
+.film-festival .festival-filters button:hover{background:transparent;color:var(--festival-ink)}
+.film-festival .festival-filters button:active{transform:scale(.95)}
+.film-festival.has-festival-motion .festival-filters button[aria-pressed=true]{background:transparent;color:var(--festival-on-accent,#fff)}
+.film-festival .festival-filter-marker{position:absolute;left:0;top:0;border-radius:40px;background:var(--festival-accent);z-index:0;pointer-events:none}
+.film-festival[data-motion-ready=true] .festival-filter-marker,.film-festival[data-motion-ready=true] .festival-project-marker{transition:transform 520ms cubic-bezier(.16,1,.3,1),width 520ms cubic-bezier(.16,1,.3,1),height 520ms cubic-bezier(.16,1,.3,1),background-color 650ms ease,border-color 650ms ease}
+.film-festival a:focus-visible,.film-festival button:focus-visible{outline-color:var(--festival-accent)}
+@media(max-width:700px){.film-festival .festival-project-marker{border-left:0;border-top:3px solid var(--festival-accent)}.film-festival .f-choice:hover{transform:translateY(-2px)}.film-festival .f-choice:active{transform:scale(.985)}}
+@media(prefers-reduced-motion:reduce){.film-festival,.film-festival *{transition:none!important;animation:none!important}}

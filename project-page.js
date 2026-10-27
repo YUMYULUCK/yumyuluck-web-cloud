@@ -20,8 +20,25 @@
   }, {passive:true});
   window.addEventListener('resize', updateNavigation);
   updateNavigation();
-  function bindGallery(gallery) {
-    const image = gallery.querySelector('.asset-stage > img');
+  function createAssetMedia(item) {
+    const isVideo = item.type === 'video';
+    const media = document.createElement(isVideo ? 'video' : 'img');
+    media.src = item.src;
+    if (isVideo) {
+      media.controls = true;
+      media.playsInline = true;
+      media.preload = 'metadata';
+      media.setAttribute('aria-label', item.alt || item.title);
+      if (item.poster) media.poster = item.poster;
+    } else {
+      media.alt = item.alt || item.title;
+      media.width = 1672;
+      media.height = 941;
+    }
+    return media;
+  }
+  function bindGallery(gallery, items) {
+    const stage = gallery.querySelector('.asset-stage');
     const caption = gallery.querySelector('[data-asset-caption]');
     const count = gallery.querySelector('[data-asset-count]');
     const thumbnails = [...gallery.querySelectorAll('.asset-thumb')];
@@ -75,8 +92,9 @@
     strip.addEventListener('dragstart', event => event.preventDefault());
     const select = index => {
       const button = thumbnails[index];
-      image.src = button.dataset.assetSrc;
-      image.alt = button.dataset.assetAlt;
+      const previous = stage.querySelector(':scope > img, :scope > video');
+      if (previous.tagName === 'VIDEO') previous.pause();
+      previous.replaceWith(createAssetMedia(items[index]));
       caption.textContent = button.dataset.assetTitle;
       count.textContent = `${String(index + 1).padStart(2, '0')} / ${String(thumbnails.length).padStart(2, '0')}`;
       thumbnails.forEach(item => {
@@ -113,6 +131,7 @@
         button.tabIndex = selected ? 0 : -1;
       });
       panel.setAttribute('aria-labelledby', tab.id);
+      panel.querySelectorAll('video').forEach(video => video.pause());
       panel.replaceChildren();
       if (!items.length) {
         const empty = document.createElement('div');
@@ -127,10 +146,8 @@
       }
       const gallery = document.createElement('div');
       gallery.className = 'asset-gallery';
-      gallery.innerHTML = '<figure class="asset-stage"><img width="1672" height="941"><figcaption aria-live="polite"><span data-asset-caption></span><span data-asset-count></span></figcaption></figure><div class="asset-thumbnails" aria-label="选择分类图片"></div>';
-      const image = gallery.querySelector('.asset-stage > img');
-      image.src = items[0].src;
-      image.alt = items[0].alt;
+      gallery.innerHTML = '<figure class="asset-stage"><figcaption aria-live="polite"><span data-asset-caption></span><span data-asset-count></span></figcaption></figure><div class="asset-thumbnails" aria-label="选择分类素材"></div>';
+      gallery.querySelector('.asset-stage').prepend(createAssetMedia(items[0]));
       gallery.querySelector('[data-asset-caption]').textContent = items[0].title;
       gallery.querySelector('[data-asset-count]').textContent = `01 / ${String(items.length).padStart(2, '0')}`;
       items.forEach((item, index) => {
@@ -141,12 +158,18 @@
         button.dataset.assetSrc = item.src;
         button.dataset.assetTitle = item.title;
         button.dataset.assetAlt = item.alt;
-        const thumbnail = document.createElement('img');
-        thumbnail.src = item.src;
-        thumbnail.alt = '';
-        thumbnail.width = 160;
-        thumbnail.height = 90;
-        thumbnail.loading = 'lazy';
+        const thumbnail = document.createElement(item.type === 'video' && !item.poster ? 'span' : 'img');
+        if (thumbnail.tagName === 'IMG') {
+          thumbnail.src = item.poster || item.src;
+          thumbnail.alt = '';
+          thumbnail.width = 160;
+          thumbnail.height = 90;
+          thumbnail.loading = 'lazy';
+        } else {
+          thumbnail.className = 'asset-video-thumbnail';
+          thumbnail.textContent = '▶ 视频';
+          thumbnail.setAttribute('aria-hidden', 'true');
+        }
         const label = document.createElement('span');
         label.append(`${String(index + 1).padStart(2, '0')} `);
         const name = document.createElement('b');
@@ -156,7 +179,7 @@
         gallery.querySelector('.asset-thumbnails').append(button);
       });
       panel.append(gallery);
-      bindGallery(gallery);
+      bindGallery(gallery, items);
     };
     tabs.forEach((tab, index) => {
       tab.addEventListener('click', () => render(tab));
@@ -172,10 +195,10 @@
         tabs[next].focus({preventScroll:true});
       });
     });
-    render(tabs.find(tab => tab.getAttribute('aria-selected') === 'true') || tabs[0]);
+    render(tabs.find(tab => tab.dataset.assetCategory === 'characters') || tabs[0]);
   });
-  const video = document.querySelector('.project-screen video');
-  if (!video) return;
-  // Stop audio when leaving this project, including browser back navigation.
-  window.addEventListener('pagehide', () => video.pause());
+  // Stop all project media when leaving, including browser back navigation.
+  window.addEventListener('pagehide', () => {
+    document.querySelectorAll('video').forEach(video => video.pause());
+  });
 })();

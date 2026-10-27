@@ -8,6 +8,7 @@ function updateProgress() {
   fixedHeader.classList.toggle('is-scrolled', window.scrollY > 24);
   const headerMiddle = fixedHeader.offsetHeight / 2;
   fixedHeader.classList.toggle('on-light', lightSections.some(section => {
+    if (section.dataset.colorScheme === 'dark') return false;
     const bounds = section.getBoundingClientRect();
     return bounds.top <= headerMiddle && bounds.bottom > headerMiddle;
   }));
@@ -17,6 +18,7 @@ window.addEventListener('scroll', () => {
   if (!scheduled) { requestAnimationFrame(updateProgress); scheduled = true; }
 }, {passive: true});
 window.addEventListener('resize', updateProgress);
+window.addEventListener('festivalthemechange', updateProgress);
 updateProgress();
 
 const backgroundVideo = document.querySelector('.home-film');
